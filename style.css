@@ -1,0 +1,108 @@
+body{
+  background-color: #141414;
+  color: #bababa;
+}
+img{
+  display: block;
+  border-radius: 50%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p, h1, h2{
+  text-align: center;
+
+}
+
+h1,h2{
+  text-decoration: underline;
+  text-decoration-color: #bababa;
+
+}
+
+td, th{
+  background: rgb(64,64,64);
+background: linear-gradient(153deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 50%, rgba(0,0,0,1) 100%);
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 4px;
+  text-align:  center;
+  box-shadow: 5px 10px 10px black;
+  padding: 5px;
+
+}
+
+table{
+  margin-right:auto;
+  margin-left:auto;
+  width: 500px;
+  height: 60px;
+}
+/* List */
+ul {
+  counter-reset: index;
+  padding: 0;
+  max-width: 300px;
+  margin : 0 auto;
+}
+
+/* List element */
+li {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, white, black );
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn
+{
+  border-style: solid;
+  border-width: 0px;
+  border-color: black;
+  background: rgb(64,64,64);
+  background: linear-gradient(153deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 50%, rgba(0,0,0,1) 100%);
+  border-radius: 30px;
+  margin:5px;
+  padding: 10px;
+  box-shadow: 5px 10px 10px black;
+  transition: color background;
+  animation-duration: 1s;
+}
+.btn:hover {
+  color:  white;
+  background: rgb(128,128,128);
+  animation-timing-function: ease;
+}
+.footer{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+
+}
